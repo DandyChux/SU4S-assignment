@@ -1,0 +1,67 @@
+/* ROOT SECTION */
+:root {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* INTRO SECTION */
+#introduction {
+    display: flex;
+}
+
+#profile {
+    width: 50%;
+}
+
+#profile img {
+    border-radius: 50%;
+    height: 50%;
+    width: 25%;
+    margin-right: 1em;
+    float: left;
+}
+
+#title {
+    color: red;
+}
+
+.section-title {
+    color: red;
+}
+
+#tagline {
+    font-weight: 600;
+}
+
+#contact {
+    width: 50%;
+    align-self: flex-end;
+}
+
+#contact h3 {
+    text-align: center;
+    color: red;
+}
+
+#links {
+    list-style-type: none;
+    text-align: right;
+    font-weight: 600;
+}
+/* WORK SECTION */
+
+
+
+/* EDUCATION SECTION */
+
+/* SKILLS SECTION */
+#skills-section li {
+    list-style-type: square;
+}
