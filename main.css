@@ -6,6 +6,10 @@
     font-size: 16px;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -68,6 +72,17 @@ a:hover {
 
 
 /* SKILLS SECTION */
+#skills-section {
+    display: flex;
+}
+
+table {
+    border-spacing: 1rem;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 #skills-section li {
     list-style-type: square;
 }
