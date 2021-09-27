@@ -69,7 +69,9 @@ a:hover {
 
 
 /* EDUCATION SECTION */
-
+#education-section li {
+    font-style: italic;
+}
 
 /* SKILLS SECTION */
 #skills-section {
