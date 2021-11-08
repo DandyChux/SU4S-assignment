@@ -10,7 +10,10 @@
 <body>
     <header>
             <h1 id='top'>Chukwuma Okoroji</h1>
-                <p>Hey what's up? I'm Chuck, welcome to my personal interest page, or as I will now affectionately refer to it, <strong><em>The Sideline Story</em></strong>. I'm a junior Information Sciences major with a concentration in Web Development. Imagine Wade from Kim Possible, but I actually go outside. When I'm not in front of a screen, I'm probably working out, playing football or basketball, or riding my longboard somewhere. I also play video games <span style='color: blue'>(PSN - Chuck_O_Beast)</span> and yes I do watch anime. Yeah yeah I know what you're thinking, <em>"weeb and a geek, pick a struggle."</em> Well I also love to talk code or just about the industry in general, so feel free to share some of your work with me or contact me.</p>
+            <img src = '../profile-image.jpg' usemap='workmap' width='500' height='500'>
+            <map name = 'workmap'>
+                <area shape='default' alt='Github' href='github.com/dandychux'>
+            </map>
     </header>
 
     <hr>
@@ -18,12 +21,29 @@
     <main>
         <div class = 'leftPanel'>
             <h3>My Goals</h3>
-                <p>Hopefully, if I'm doing this whole school thing right, I'll be a full-stack web developer one day. I spent a lot of time this summer working on my pesonal portfolio, building little projects and websites to expoise myself to different technolgies. I managed to land an internship at a local startup, JustLearn. I want to continue learning and start exposing myself to more backend technologies like Django and Express.</p>
+            <p>Hopefully, if I'm doing this whole school thing right, I'll be a full-stack web developer one day. I spent a lot of time this summer working on my pesonal portfolio, building little projects and websites to expoise myself to different technolgies. I managed to land an internship at a local startup, JustLearn. I want to continue learning and start exposing myself to more backend technologies like Django and Express.</p>
+
+            <button id='modalBtn'>Open Message</button>
+
+            <div id = 'myModal' class='modal'>
+                <div class = 'modal-content'>
+                    <div class = 'modal-body'>
+                        <p>Have a nice day!</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class = 'middlePanel'>
+            <p style='font-weight: 600'>Hey what's up? I'm Chuck, welcome to my personal interest page, or as I will now affectionately refer to it, <strong><em>The Sideline Story</em></strong>. I'm a junior Information Sciences major with a concentration in Web Development. Imagine Wade from Kim Possible, but I actually go outside. When I'm not in front of a screen, I'm probably working out, playing football or basketball, or riding my longboard somewhere. I also play video games <span style='color: blue'>(PSN - Chuck_O_Beast)</span> and yes I do watch anime. Yeah yeah I know what you're thinking, <em>"weeb and a geek, pick a struggle."</em> Well I also love to talk code or just about the industry in general, so feel free to share some of your work with me or <a href='../contact.html'>contact me</a>.</p>
+
+            <hr>
+
             <h3>Favorite Animal</h3>
-                <img id='blackpanther' src='https://thumbs.gfycat.com/BitterBackEastsiberianlaika-size_restricted.gif'>
+                <img id='blackpanther' src='https://thumbs.gfycat.com/BitterBackEastsiberianlaika-size_restricted.gif' usemap='moviemap'>
+                <map name = 'moviemap'>
+                    <area shape = 'default' alt='IMDB' href='https://www.imdb.com/title/tt1825683/'>
+                </map>
                 <p>Wakanda Forever. Moving on.</p>
             
             <hr>
@@ -49,6 +69,28 @@
             </ol>
         </div>
     <main>
+
+<script>
+    var modal = document.getElementById('myModal');
+
+    var btn = document.getElementById('modalBtn');
+
+    var span = document.getElementsByClassName('close')[0];
+
+    btn.onclick = function() {
+        modal.style.display = 'block';
+    }
+
+    span.onclick = function() {
+        modal.style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    }
+</script>
 </body>
 <style>
     #blackpanther {
@@ -147,5 +189,46 @@
         display: block;
         color: red;
     }
+    .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;  
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+
+    .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+
+    .close {
+        color: white;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .modal-body {
+        padding: 0.2rem 1rem;
+    }
+
+
 </style>
 </html>
