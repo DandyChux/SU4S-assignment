@@ -27,6 +27,7 @@ iframe {
 #menu {
     float: left;
     height: 100vh;
+    background-color: rgb(48,71,94);
 }
 
 #resume {
@@ -132,7 +133,7 @@ iframe {
     box-shadow: 0.25rem 0.25rem rgba(34, 40, 49, 0.952);
 }
 
-/* INDEX.HTML MAIN MENU */
+/* MENU.HTML MAIN MENU */
 .main-menu ul {
     padding: 0;
 }
