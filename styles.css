@@ -142,3 +142,19 @@ iframe {
     list-style-type: none;
     text-align: center;
 }
+
+/*  CONTACT.HTML STYLE */
+.contactPage > *{
+    text-align: center;
+    display: block;
+}
+
+.contact-left {
+    float: left;
+    width: 50%;
+}
+
+.contact-right {
+    float: right;
+    width: 50%;
+}

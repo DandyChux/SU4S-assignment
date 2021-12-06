@@ -3,12 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
+    <link rel='stylesheet' href='styles.css'>
     <title>Contact Me</title>
 </head>
-<body>
-    <img src = '../profile-image.jpg'>
+<body class='contactPage'>
+    <!-- <img src = '../profile-image.jpg'>
     <h1>Contact Information</h1>
     <p>Phone:   (850)296-5758</p>
-    <p>E-Mail:  <a href='mailto: cokoroji@usf.edu'>cokoroji@usf.edu</a></p>
+    <p>E-Mail:  <a href='mailto: cokoroji@usf.edu'>cokoroji@usf.edu</a></p> -->
+    <div class='contact-left'>
+        <h2 class='form-header'>Use This Form to Contact Me</h2>
+        <form id='contactForm' action='javascript:void(0);'>
+            <!-- Full Name -->
+            <label for='name'>Name:</label>
+            <input type='text' name='name' id='name'><br>
+            <!-- Email -->
+            <label for='email'>E-mail Address:</label>
+            <input type='text' name='email' id='email'><br>
+            <!-- Subject -->
+            <label for="subject">Subject:</label>
+            <input type='text' name='subject' id='subject'><br>
+            <!-- Priority Selector -->
+            <label for='priority'>Priority:</label>
+            <select name='priority' id='priority'>
+                <option value='Low'>Low</option>
+                <option value='Medium'>Medium</option>
+                <option value='High'>High</option>
+            <select><br>
+            <!-- Mesage -->
+            <label for='message'>Message:</label>
+            <textarea id='message' name='message' rows='4' cols='50' placeholder='Speak your mind'></textarea><br>
+            <!-- Buttons -->
+            <button form='contactForm' type='reset'>Clear Form</button>
+            <button form='contactForm' onclick='printMessage()'>Send Message</button>
+        </form>
+    </div>
+    <div class='contact-right'>
+        <!-- DISPLAYING THE MESSAGE -->
+        <h2 class='form-header'>If your message passes inspection, it will be displayed below:</h2>
+        <label for='infoText'>Message Sent:</label>
+        <textarea id='infoText' name='info' rows='6' cols='50'></textarea>
+    </div>
+
+    <script src='../script.js'></script>
 </body>
+
+   
 </html>
